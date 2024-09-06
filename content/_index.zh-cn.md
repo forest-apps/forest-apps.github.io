@@ -12,14 +12,14 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Unlock the potential of your maritime projects with our specialized software development services.
-  We provide cutting-edge solutions tailored for the design and engineering of ships and offshore structures.
-  From conceptual design to detailed engineering, our expertise helps you navigate the complexities of the marine industry with confidence and excellence.
+提供专业的软件开发服务，专为船舶与海洋结构的设计和分析打造先进的解决方案。
+
+从概念设计到详细工程，我们具备船舶与海洋工程工业软件的原创开发和二次开发能力，助您实现高效的一体化设计、分析、报告流程，并最大限度地推动全流程自动化。
 {{< /hextra/hero-subtitle >}}
 </div>
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="Contact us" link="about" >}}
+{{< hextra/hero-button text="联系我们" link="about" >}}
 </div>
 
 <div class="hx-mt-6"></div>
