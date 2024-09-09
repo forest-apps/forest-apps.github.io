@@ -28,7 +28,7 @@ layout: hextra-home
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
     title="DP Capability Tool"
-    subtitle="A tool to assess the station keeping capabilities of a vessel with respect to intact condition and relevant failures."
+    subtitle="一款功能强大的动力定位系统能力分析软件，具备友好的图形用户界面、高效的分析评价能力和自动化的报告生成工具"
 	  link="/dp_capability_tool"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="images/dp_image_01.webp"
@@ -37,7 +37,7 @@ layout: hextra-home
   >}}
   {{< hextra/feature-card
     title="FreeFloating"
-    subtitle="Compose with just Markdown. Enrich with Shortcode components."
+    subtitle="免费的基于开源求解器HAMS的波浪绕射和辐射分析三维建模工具"
     link="/free_floating"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="images/ff_image_01.webp"
