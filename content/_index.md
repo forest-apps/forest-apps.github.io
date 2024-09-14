@@ -13,7 +13,7 @@ layout: hextra-home
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
   Unlock the potential of your maritime projects with our specialized software development services.
-  We provide cutting-edge solutions tailored for the design and engineering of ships and offshore structures.
+  We provide solutions tailored for the design and engineering of ships and offshore structures.
   From conceptual design to detailed engineering, our expertise helps you navigate the complexities of the marine industry with confidence and excellence.
 {{< /hextra/hero-subtitle >}}
 </div>
@@ -46,7 +46,7 @@ layout: hextra-home
   >}}
   {{< hextra/feature-card
     title="HydroModeller"
-    subtitle="Compose with just Markdown. Enrich with Shortcode components."
+    subtitle="Cloud-based panel model and Morison model modelling tool for hydrodynamic analysis of typical floaters."
     link="/hydro_modeller"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="images/hm_deepcwind.webp"

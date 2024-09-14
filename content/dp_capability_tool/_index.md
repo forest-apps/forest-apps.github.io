@@ -124,7 +124,7 @@ Application title bar is on the top of the user interface, showing the basic inf
 
 Application menu bar is composed of drop-down menus that contain a list of grouped menu items for the functionality related to the application or a project.
 
-File menu contains the functionality to create/open/save a project. The recent3.3 projects can be remembered and reopened from the Open Recent list.
+File menu contains the functionality to create/open/save a project. The recent projects can be remembered and reopened from the Open Recent list.
 
 <img title="a title" alt="Alt text" src="images/dp_image_014.png">
 

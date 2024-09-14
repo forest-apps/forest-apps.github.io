@@ -5,16 +5,15 @@ layout: hextra-home
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-   Advanced Software Service&nbsp;<br class="sm:hx-block hx-hidden" />
-   for Ship and Offshore Structure Design
+   面向船舶与海洋工程的专业软件服务
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-提供专业的软件开发服务，专为船舶与海洋结构的设计和分析打造先进的解决方案。
+提供专业的软件咨询和开发服务，为船舶与海洋结构的设计和分析打造先进的解决方案。
 
-从概念设计到详细工程，我们具备船舶与海洋工程工业软件的原创开发和二次开发能力，助您实现高效的一体化设计、分析、报告流程，并最大限度地推动全流程自动化。
+从概念设计到详细工程，以船舶与海洋工程工业软件的原创开发和二次开发能力，助您实现高效的一体化设计、分析、报告流程，并最大限度地推动全流程自动化。
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -37,7 +36,7 @@ layout: hextra-home
   >}}
   {{< hextra/feature-card
     title="FreeFloating"
-    subtitle="免费的基于开源求解器HAMS的波浪绕射和辐射分析三维建模工具"
+    subtitle="基于开源求解器HAMS的波浪绕射和辐射分析三维建模工具"
     link="/free_floating"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="images/ff_image_01.webp"
@@ -46,7 +45,7 @@ layout: hextra-home
   >}}
   {{< hextra/feature-card
     title="HydroModeller"
-    subtitle="Compose with just Markdown. Enrich with Shortcode components."
+    subtitle="基于云服务的高效的浮体水动力面元模型和莫里森模型建模工具"
     link="/hydro_modeller"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="images/hm_deepcwind.webp"
