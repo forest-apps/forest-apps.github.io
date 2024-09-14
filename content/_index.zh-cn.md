@@ -34,21 +34,23 @@ layout: hextra-home
     imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
-  {{< hextra/feature-card
-    title="FreeFloating"
-    subtitle="基于开源求解器HAMS的波浪绕射和辐射分析三维建模工具"
-    link="/free_floating"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="images/ff_image_01.webp"
-    imageClass="hx-top-[40%] hx-left-[36px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
-  >}}
+
   {{< hextra/feature-card
     title="HydroModeller"
     subtitle="基于云服务的高效的浮体水动力面元模型和莫里森模型建模工具"
     link="/hydro_modeller"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="images/hm_deepcwind.webp"
+    imageClass="hx-top-[40%] hx-left-[36px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+  >}}
+
+  {{< hextra/feature-card
+    title="FreeFloating"
+    subtitle="基于开源求解器HAMS的波浪绕射和辐射分析三维建模工具"
+    link="/free_floating"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="images/ff_image_01.webp"
     imageClass="hx-top-[40%] hx-left-[36px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
   >}}
