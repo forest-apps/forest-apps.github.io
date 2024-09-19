@@ -4,7 +4,7 @@ title: "HydroModeller"
 ---
 
 {{< hextra/hero-badge link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool1.0_Windows.zip/DpCapabilityTool1.0_Windows.zip" >}}
-  <span>Download and start with HydroModeller.Client.exe</span>
+  <span>下载并运行文件 HydroModeller.Client.exe</span>
 {{< /hextra/hero-badge >}}
 
 
