@@ -97,8 +97,8 @@ params:
     displayToggle: true
 
   footer:
-    enable: true
-    displayCopyright: true
+    enable: false
+    displayCopyright: false
     displayPoweredBy: true
     width: normal
 
