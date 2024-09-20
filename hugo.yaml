@@ -53,31 +53,14 @@ menu:
       name: FreeFloating
       pageRef: /free_floating
       weight: 3
-    - identifier: documentation
-      name: Documentation
-      pageRef: /docs
-      weight: 4
-    - identifier: showcase
-      name: Showcase
-      pageRef: /showcase
-      weight: 5
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
-      weight: 6
     - identifier: about
       name: About
       pageRef: /about
-      weight: 7
+      weight: 4
     - name: Search
-      weight: 8
+      weight: 5
       params:
         type: search
-    - name: GitHub
-      weight: 9
-      url: "https://github.com/imfing/hextra"
-      params:
-        icon: github
 
   sidebar:
     - identifier: more
