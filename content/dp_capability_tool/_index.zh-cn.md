@@ -4,7 +4,7 @@ title: "DP Capability Tool"
 ---
 
 
-{{< hextra/hero-badge link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool1.0_Windows.zip/DpCapabilityTool1.0_Windows.zip" >}}
+{{< hextra/hero-badge link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool1.0_Windows/DpCapabilityTool1.0_Windows.zip" >}}
   <span>下载并运行文件 DpCapabilityTool.exe</span>
 {{< /hextra/hero-badge >}}
 

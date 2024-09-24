@@ -3,7 +3,7 @@ linkTitle: "HydroModeller"
 title: "HydroModeller"
 ---
 
-{{< hextra/hero-badge link="https://github.com/forest-apps/forest-apps.github.io/releases/download/FreeFloating1.0_Windows.zip/FreeFloating1.0_Windows.zip" >}}
+{{< hextra/hero-badge link="https://github.com/forest-apps/forest-apps.github.io/releases/download/FreeFloating1.0_Windows/FreeFloating1.0_Windows.zip" >}}
   <span>下载并运行文件 FreeFloating.exe</span>
 {{< /hextra/hero-badge >}}
 
