@@ -3,10 +3,7 @@ linkTitle: "HydroModeller"
 title: "HydroModeller"
 ---
 
-{{< hextra/hero-badge link="https://github.com/forest-apps/forest-apps.github.io/releases/download/HydroModeller1.0_Windows/HydroModeller1.0_Windows.zip" >}}
-  <span>Download and start with HydroModeller.Client.exe</span>
-{{< /hextra/hero-badge >}}
-
+{{< hextra/hero-button text="Download and start with HydroModeller.Client.exe" link="https://github.com/forest-apps/forest-apps.github.io/releases/download/HydroModeller1.0_Windows/HydroModeller1.0_Windows.zip" >}}
 
 ## 1 Introduction
 
