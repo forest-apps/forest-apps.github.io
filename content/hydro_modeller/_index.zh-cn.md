@@ -152,6 +152,8 @@ Once all the geometry components have been modeled, a cloud task can be created 
 
 Users can define the mesh size for the panel model in a cloud task. By enabling the "Include water plane" option, the water plane mesh will also be generated using the same mesh size, along with a triangular mesh for air gap analysis.
 
+Users can specify an email address to receive updates on task processing status.
+
 A cloud task can be submitted for processing once it is created using the context menu in the task grid. The processing details can be synchronized using the same function.
 
 <img title="a title" alt="Alt text" src="images/Snipaste_2024-09-14_16-28-57.png">
