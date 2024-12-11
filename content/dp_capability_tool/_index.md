@@ -110,45 +110,53 @@ The user interface consists of 5 main area, including
 - Model view
 - Plot view
 
-<img title="a title" alt="Alt text" src="images/dp_image_012.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-27-22.png">
 
 ### 3.1 Application title bar
 
 Application title bar is on the top of the user interface, showing the basic information of the project, such as the path of the project file.
 
-<img title="a title" alt="Alt text" src="images/dp_image_013.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-28-53.png">
 
 ### 3.2 Application menu bar
 
 Application menu bar is composed of drop-down menus that contain a list of grouped menu items for the functionality related to the application or a project.
 
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-29-33.png">
+
 File menu contains the functionality to create/open/save a project. The recent projects can be remembered and reopened from the Open Recent list.
 
-<img title="a title" alt="Alt text" src="images/dp_image_014.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-30-45.png">
 
 The user manual, license information and the About can be found in the Help menu. 
 
-<img title="a title" alt="Alt text" src="images/dp_image_015.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-31-35.png">
 
-### 3.4 Model view
+### 3.3 Model view
 
 Model view is a container for detailed data of a certain section of the Project panel. When a section in the Project panel is clicked, the Model view will switch to the corresponding view for the models and settings. 
 
-<img title="a title" alt="Alt text" src="images/dp_image_016.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-32-06.png">
 
-### 3.5 Plot view
+### 3.4 Plot view
 
 Plot view can show up to 2 plots for the model/result in the context. By clicking the Save button on the top-right corner, the user could save the plot to a local image file.
 
-<img title="a title" alt="Alt text" src="images/dp_image_017.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-32-39.png">
 
-### 3.6 Project panel
+### 3.5 Project panel
 
 Project panel is at the left of the main area of the user interface and contains all the models and utilities of a project, such as thruster configuration, failure modes, environmental loads, analysis, reporting and rule utilities. In general, the user could follow the order of sections in Project panel for modelling, analyzing and reporting. 
 
-<img title="a title" alt="Alt text" src="images/dp_image_018.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-33-09.png">
 
-#### 3.6.1 Thruster configuration
+#### 3.5.1 Vessel data
+
+If vessel outline points are provided, the vessel outline will be displayed in the thruster configuration plot. Additionally, users can customize the appearance of thrusters by specifying the marker size.
+
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-34-53.png">
+
+#### 3.5.2 Thruster configuration
 
 The thruster configuration of a DP system depends on the specific requirements of the vessel and its intended operations. 3 types of thrusters are supported in the program, including
 
@@ -158,11 +166,11 @@ The thruster configuration of a DP system depends on the specific requirements o
 
 The data of azimuth thrusters and tunnel thrusters are specified in the Thrusters section, while the Shaft propellers section for shaft propellers with/without rudder.
 
-##### 3.6.1.1 Thrusters
+##### 3.5.2.1 Thrusters
 
 Azimuth thrusters and tunnel thrusters can be added to the thruster configuration.
 
-<img title="a title" alt="Alt text" src="images/dp_image_019.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-37-28.png">
 
 The azimuth thrusters and tunnel thrusters are listed in the data grids. The user can add/edit/delete records with the buttons in the corresponding actions bars.
 
@@ -178,9 +186,9 @@ The properties of a tunnel thruster are almost the same as those of an azimuth t
 
 Plot view shows the thruster positions. When a thruster is selected in the list, it will be highlighted in the plot.
 
-<img title="a title" alt="Alt text" src="images/dp_image_023.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-38-46.png">
 
-##### 3.6.1.2 Shaft propellers
+##### 3.5.1.2 Shaft propellers
 
 Shaft propellers are mainly used for the propulsion of the ship and they are not always part of the DP system. Modern DP systems can use shaft propeller/rudder pair to increase the DP capability. A shaft/rudder pair can generate thrust in the longitudinal and transverse direction. 
 
@@ -210,11 +218,11 @@ The plots of rudder performance will be shown in the Plot view.
 
 <img title="a title" alt="Alt text" src="images/dp_image_030.png">
 
-#### 3.6.2 Failure modes
+#### 3.5.3 Failure modes
 
 Failure modes are defined in groups for batch calculation of all combinations with the environmental loads. When a thruster is set as failed, it will be out of work and marked as grey in the plot of thruster position.
 
-<img title="a title" alt="Alt text" src="images/dp_image_031.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-44-04.png">
 
 For an azimuth thruster, the thrust loss factor curve and forbidden zones can be defined for each failure mode. 
 
@@ -222,9 +230,9 @@ The thrust loss factor curve is defined by a number of points and linear interpo
 
 Forbidden zones are defined to avoid an azimuth thruster from flushing at another thruster or the skeg. An azimuth thruster can be restricted with multiple forbidden zones, which will be shown in the Plot view for user’s reference.
 
-<img title="a title" alt="Alt text" src="images/dp_image_032.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-44-51.png">
 
-#### 3.6.3 Environmental loads
+#### 3.5.4 Environmental loads
 
 Environmental loads are defined in groups for batch calculation of all combinations with the failure modes. Also, a group of environmental loads with ascending wind speeds and DP capability numbers is essential for the capability analysis which is to find the maximum wind speed/DP capability number the vessel can keep its position with the DP system. 
 
@@ -234,19 +242,19 @@ For the feasibility calculation which is to find the optimal thrust allocation a
 
 Environmental load is a collection of external loads with respect to each environmental direction. The data can be specified in the table format with 4 columns, which are Direction, F_x, F_y and M_x. 
 
-<img title="a title" alt="Alt text" src="images/dp_image_034.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-45-39.png">
 
 Once the external loads are specified, a rose plot of the resultant and a plot of components will be show in the Plot view.
 
-#### 3.6.4 Analysis
+#### 3.5.5 Analysis
 
 Two types of analysis are supported in the program, including feasibility calculation and capability analysis. While feasibility calculation is to find the optimal thrust allocation among the thrusters to keep the vessel’s position with a certain environmental load, capability analysis explores the maximum weather conditions in which a DP vessel can maintain its position and heading.
 
-##### 3.6.4.1 Analysis settings
+##### 3.5.5.1 Analysis settings
 
 Analysis settings include options related to feasibility calculation and capability analysis, as well as the rose plot settings of the results.
 
-<img title="a title" alt="Alt text" src="images/dp_image_035.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-46-50.png">
 
 For rose plots of the results of feasibility calculation and capability analysis, the curve is drawn connecting the points ordered by direction one by one. In some cases, only a range of directions around a certain direction is of interest. Skipped zones can be added to create proper rose plots for such cases.
 
@@ -262,7 +270,7 @@ The adjusted rose plot is shown as below.
 
 <img title="a title" alt="Alt text" src="images/dp_image_038.png">
 
-##### 3.6.4.2 Feasibility calculation
+##### 3.5.5.2 Feasibility calculation
 
 Feasibility calculation solves the thrust allocation among thrusters by minimizing the total power consumption of the DP system in the meanwhile balancing the environmental loads. 
 
@@ -274,7 +282,7 @@ where P_(max,i) is the maximum power of thruster i,T_(nominal,i) is the nominal 
 
 A calculation group of feasibility calculation is defined with a failure mode group and an environmental load group. All the combinations of failure modes and environmental loads will be listed once the calculation group is created.
 
-<img title="a title" alt="Alt text" src="images/dp_image_040.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-47-37.png">
 
 For a calculation group, all the calculations are listed in the Calculations. A calculation is the combination of a failure mode and an environmental load. Click Calculate all to calculate all the calculations, or the user can select one specific calculation in the list and calculate it alone by the context menu command.
 
@@ -294,7 +302,7 @@ Plot view will update with the rose plots, when the selection in Calculations an
 
 <img title="a title" alt="Alt text" src="images/dp_image_044.png">
 
-##### 3.6.4.3 Capability analysis
+##### 3.5.5.3 Capability analysis
 
 A calculation group in Capability analysis is similar to that in Feasibility calculation, except that it requires the wind speed and DP capability number of environmental loads are specified correctly.
 
@@ -302,19 +310,19 @@ A calculation group in Capability analysis is similar to that in Feasibility cal
 
 A calculation in the Calculations list is corresponding to a failure mode and an environmental load group. The rose plots maximum wind speed and DP capability number will be shown in the Plot view, if the solution of a calculation is available. 
 
-<img title="a title" alt="Alt text" src="images/dp_image_046.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-49-30.png">
 
-#### 3.6.5 Reporting
+#### 3.5.6 Reporting
 
 Convenient reporting is an important feature of the program. User can select the preferred model data and results to include in the report. A well-structured report file is created and saved to the Reports folder of the project by clicking the Create report button. The report will be opened in Word if installed automatically.
 
 <img title="a title" alt="Alt text" src="images/dp_image_047.png">
 
-#### 3.6.6 Rule utilities
+#### 3.5.7 Rule utilities
 
 The program also includes several utilities to help calculate environmental loads, failure mode related data and rudder performance data by rules of the classification societies, such as DNV and ABS.
 
-##### 3.6.6.1 Det Norske Veritas (DNV)
+##### 3.5.7.1 Det Norske Veritas (DNV)
 
  The rule utilities of DNV are based on DNVGL-ST-0111 2018 Assessment of station keeping capability of dynamic positioning vessels. Environmental loads, including wind, current and wave, are calculated with the formulas in 3.4 Environmental loads.
 
@@ -328,8 +336,8 @@ Rudder performance estimation is also available.
 
 <img title="a title" alt="Alt text" src="images/dp_image_050.png">
 
-##### 3.6.6.2 American Bureau of Shipping (ABS)
+##### 3.5.7.2 American Bureau of Shipping (ABS)
 
 Rudder performance curves from ABS Guide for Dynamic Positioning Systems (November 2013) are available.
 
-<img title="a title" alt="Alt text" src="images/dp_image_051.png">
+<img title="a title" alt="Alt text" src="images/Snipaste_2024-12-11_08-51-37.png">
