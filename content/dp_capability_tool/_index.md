@@ -188,7 +188,7 @@ Plot view shows the thruster positions. When a thruster is selected in the list,
 
 <img title="a title" alt="Alt text" src="images/Snipaste_2024-12-10_17-38-46.png">
 
-##### 3.5.1.2 Shaft propellers
+##### 3.5.2.2 Shaft propellers
 
 Shaft propellers are mainly used for the propulsion of the ship and they are not always part of the DP system. Modern DP systems can use shaft propeller/rudder pair to increase the DP capability. A shaft/rudder pair can generate thrust in the longitudinal and transverse direction. 
 
