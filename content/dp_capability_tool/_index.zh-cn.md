@@ -4,7 +4,7 @@ title: "DP Capability Tool"
 ---
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="下载并运行文件 DpCapabilityTool.exe" link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool1.0_Windows/DpCapabilityTool1.0_Windows.zip" >}}
+{{< hextra/hero-button text="下载并运行文件 DpCapabilityTool.exe" link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool1.1_Windows/DpCapabilityTool_Windows_v1.1.0.0.zip" >}}
 </div>
 
 ## 1 Introduction
