@@ -26,18 +26,18 @@ layout: hextra-home
 
 <div class="hx-mt-6"></div>
 
+{{< hextra/feature-grid cols="2">}}
 
-{{< hextra/feature-grid >}}
   {{< hextra/feature-card
     title="DP Capability Tool"
-    subtitle="A tool to assess the station keeping capabilities of a vessel with respect to intact condition and relevant failures."
-	  link="/dp_capability_tool"
+    subtitle="Evaluate the **station-keeping capability** of DP vessels under combined wind, wave, and current loads. The tool generates **DP capability plots** (**rose plots**) to support operability assessment and to identify limiting environmental conditions. Both **feasibility calculations** and DP capability analysis are supported for **intact conditions** and defined **failure modes**, with built-in utilities aligned with **DNVGL-ST-0111** and **ABS DP guidelines**" 
+    link="/dp_capability_tool"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="images/dp_image_01.webp"
     imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
-
+  
   {{< hextra/feature-card
     title="HydroModeller"
     subtitle="Cloud-based panel model and Morison model modelling tool for hydrodynamic analysis of typical floaters."
