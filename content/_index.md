@@ -5,21 +5,23 @@ layout: hextra-home
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-   Software Service&nbsp;<br class="sm:hx-block hx-hidden" />
-   for efficient Ship and Offshore Structure Design and Analysis
+   Design, Modelling and Analysis Tools for Naval Architecture and Ocean Engineering
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Unlock the potential of your maritime projects with our specialized software development services.
-  We provide solutions tailored for the design and engineering of ships and offshore structures.
-  From conceptual design to detailed engineering, our expertise helps you navigate the complexities of the marine industry with confidence and excellence.
+  Forest Apps is a collection of practical software tools and numerical utilities developed for naval architects, ocean engineers, and offshore engineers. 
+  The site focuses on engineering-oriented workflows, efficient modelling, and reproducible analysis, supporting both preliminary design and research activities in marine and offshore engineering.
+
+  <br/>
+  
+  We provide lightweight, engineer-friendly applications covering key analysis tasks commonly encountered in floating offshore structures, marine renewable energy, and ship & offshore system design.The tools are designed to complement commercial software by offering open, inspectable, and extensible implementations suitable for education, research, and early-stage engineering studies.
 {{< /hextra/hero-subtitle >}}
 </div>
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="Contact us" link="about" >}}
+{{< hextra/hero-button text="Contact us via email: forestapps@hotmail.com" link="about" >}}
 </div>
 
 <div class="hx-mt-6"></div>
