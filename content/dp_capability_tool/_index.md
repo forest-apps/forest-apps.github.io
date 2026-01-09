@@ -2,10 +2,23 @@
 linkTitle: "DP Capability Tool"
 title: "DP Capability Tool"
 ---
+<div class="hx-mt-6"></div>
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="Download and start with DpCapabilityTool.exe" link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool1.1_Windows/DpCapabilityTool_Windows_v1.1.0.0.zip" >}}
+{{< hextra/hero-button text="Download" link="https://github.com/forest-apps/forest-apps.github.io/releases/tag/DpCapabilityTool_Windows_v1.1.1.0" >}}
 </div>
+
+<div class="hx-mt-6"></div>
+
+{{% details title="License" %}}
+
+* $99 for 1 month 
+* $199 for 3 months
+* $399 for 1 year
+
+Contact forestapps@hotmail.com for further information.
+{{% /details %}}
+
 
 ## 1 Introduction
 
