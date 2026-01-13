@@ -8,9 +8,9 @@ sidebar:
 
 {{% details title="License" %}}
 
-* $99 for 1 month 
-* $199 for 3 months
-* $399 for 1 year
+* $199 for 3 month 
+* $399 for 6 months
+* $599 for 12 months
 
 Contact forestapps@hotmail.com for further information.
 {{% /details %}}
