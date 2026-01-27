@@ -37,6 +37,16 @@ layout: hextra-home
     imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
+
+  {{< hextra/feature-card
+    title="Wave Scatter Diagram Tool"
+    subtitle="The Wave Scatter Diagram Tool generates **global wave scatter diagrams** in accordance with **DNVGL-RP-C205**. It uses the DNV-recommended Conditional Modelling Approach (CMA) to estimate sea state occurrence for different navigational zones, supports Weibull and Log-Normal distributions for HS and TZ(**Nautic zones**, **North Atlantic** and **World Wide trade**), allows user-defined bin settings, and enables export of data and figures for direct use in reports." 
+    link="/wave_scatter_diagram"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="./images/Snipaste_2026-01-27_10-06-43.png"
+    imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
   
   {{< hextra/feature-card
     title="HydroModeller"

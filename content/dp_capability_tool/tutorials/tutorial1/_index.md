@@ -6,80 +6,209 @@ sidebar:
   open: true
 ---
 
-Hextra supports creating site with multiple languages using Hugo's [multilingual mode](https://gohugo.io/content-management/multilingual/).
+# Tutorial: DP Capability Analysis for an Offshore Wind Turbine Installation Vessel
 
-<!--more-->
+## 1. Introduction
 
-## Enable Multi-language
+This tutorial demonstrates how to use the **DP Capability Tool** to perform **feasibility calculation** and **capability analyses** for an offshore wind turbine installation vessel equipped with:
 
-To make our site multi-language, we need to tell Hugo the supported languages. We need to add to the site configuration file:
+- **2 azimuth thrusters at the bow**
+- **3 tunnel thrusters at the stern**
 
-```yaml {filename="hugo.yaml"}
-defaultContentLanguage: en
-languages:
-  en:
-    languageName: English
-    weight: 1
-  fr:
-    languageName: Français
-    weight: 2
-  ja:
-    languageName: 日本語
-    weight: 3
-```
+The complete tutorial model is provided within the software and is accessible from the Help menu.
 
-## Manage Translations by Filename
+![Tutorial menu](./images/Snipaste_2026-01-27_08-53-13.png)
 
-Hugo supports managing translations by filename. For example, if we have a file `content/docs/_index.md` in English, we can create a file `content/docs/_index.fr.md` for French translation.
+---
 
-{{< filetree/container >}}
-  {{< filetree/folder name="content" >}}
-    {{< filetree/folder name="docs" state="open" >}}
-      {{< filetree/file name="_index.md" >}}
-      {{< filetree/file name="_index.fr.md" >}}
-      {{< filetree/file name="_index.ja.md" >}}
-    {{< /filetree/folder >}}
-  {{< /filetree/folder >}}
-{{< /filetree/container >}}
+## 2. Vessel data (Optional)
 
-Note: Hugo also supports [Translation by content directory](https://gohugo.io/content-management/multilingual/#translation-by-content-directory).
+In a standard DP capability analysis, the first step is to input **vessel data**, which defines the vessel reference frame and serves as a container for thruster positions.
 
-## Translate Menu Items
+This step is optional but recommended for clarity and future model extension.
 
-To translate menu items in the navigation bar, we need to set the `identifier` field:
+> **Note:** The vessel outline is used for visualization only and does **not** affect DP calculation results.
 
-```yaml {filename="hugo.yaml"}
-menu:
-  main:
-    - identifier: documentation
-      name: Documentation
-      pageRef: /docs
-      weight: 1
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
-      weight: 2
-```
+### Vessel outline coordinates 
 
-and translate them in the corresponding i18n file:
+| X (m) | Y (m) |
+|------:|------:|
+| 120.0 | 0.0 |
+| 90.0 | 25.0 |
+| -120.0 | 25.0 |
+| -120.0 | -25.0 |
+| 90.0 | -25.0 |
 
-```yaml {filename="i18n/fr.yaml"}
-documentation: Documentation
-blog: Blog
-```
+These outline points are linked together into a closed frame, helping users visually check and confirm the thruster locations relative to the vessel's hull.
 
-## Translate Strings
+---
 
-To translate strings on the other places, we need to add the translation to the corresponding i18n file:
+## 3. Thruster configuration
 
-```yaml {filename="i18n/fr.yaml"}
-readMore: Lire la suite
-```
+This vessel configuration includes:
 
-A list of strings used in the theme can be found in the `i18n/en.yaml` file.
+- **Azimuth thrusters (bow)**  
+  Capable of generating thrust in any direction from **0° to 360°**
 
-## Read More
+- **Tunnel thrusters (stern)**  
+  Capable of generating thrust to either **port** or **starboard**
 
-- [Hugo Multilingual Mode](https://gohugo.io/content-management/multilingual/)
-- [Hugo Multilingual Part 1: Content translation](https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/)
-- [Hugo Multilingual Part 2: Strings localization](https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-2-i18n-string-localization/)
+There are **no shaft propellers** in this tutorial case.
+
+---
+
+### 3.1 Thrusters
+
+For each azimuth or tunnel thruster, the following parameters must be defined:
+
+- Thruster name
+- X coordinate (m)
+- Y coordinate (m)
+- Propeller diameter (m)
+- Maximum power (kW)
+- Maximum nominal thrust (kN)
+- Default thrust loss factor
+
+Each thruster is positioned relative to the vessel reference coordinate system. When a thrust loss factor curve is not supplied, the default thrust loss factor is applied to calculate the thrust force. It is especially applicable to azimuth thrusters.
+
+#### Azimuth Thrusters
+
+| Name | X (m) | Y (m) | Diameter (m) | Max power (kW) | Nominal thrust (kN) | Default thrust loss factor |
+|------|------:|------:|-------------:|--------------:|--------------------:|---------------------------:|
+| Th1  | -108.6 | -8.2 | 0 | 4,500.00 | 694.428 | 0.9 |
+| Th2  | -108.6 | 8.2  | 0 | 4,500.00 | 694.428 | 0.9 |
+
+#### Tunnel Thrusters
+
+| Name | X (m) | Y (m) | Diameter (m) | Max power (kW) | Nominal thrust (kN) | Default thrust loss factor |
+|------|------:|------:|-------------:|--------------:|--------------------:|---------------------------:|
+| Th3  | 102.8 | 0 | 0 | 2,200.00 | 252.36 | 0.9 |
+| Th4  | 96.8  | 0 | 0 | 2,200.00 | 252.36 | 0.9 |
+| Th5  | 90.2  | 0 | 0 | 2,200.00 | 252.36 | 0.9 |
+
+The thruster position plot displays each azimuth thruster, tunnel thruster, and shaft propeller using a distinct shape and color for each type. When a thruster is selected in the list, it will be highlighted in the plot accordingly.
+
+![Thruster positions plot](./images/ThrusterPositionPlot.gif)
+
+---
+
+## 5. Failure Mode Definition
+
+### 5.1 Failure Mode Groups
+
+Failure modes are organized into **failure mode groups**, each representing a specific operational scenario, such as:
+
+- Intact condition (all thrusters active)
+- Single thruster failure
+- Multiple thruster failures
+
+The user must:
+
+1. Create a failure mode group with a meaningful name  
+2. Define one or more failure modes within the group  
+3. Specify which thrusters are **active** or **failed** in each mode  
+
+---
+
+### 5.2 Azimuth Thruster Restrictions
+
+For azimuth thrusters, additional constraints can be applied:
+
+- **Thrust factor curve** over the full **0–360°** range  
+- **Multiple forbidden azimuth zones**, where thrust is restricted or not allowed  
+
+These settings allow realistic modeling of mechanical, structural, or operational limitations.
+
+---
+
+## 6. Environmental Load Definition
+
+Environmental loads are required for both **feasibility calculations** and **capability analysis**.
+
+### 6.1 Environmental Load Groups
+
+Environmental loads are organized into **groups**, each corresponding to a specific wind speed or wind speed series.
+
+In this tutorial, two environmental load groups are used:
+
+1. **Site Loads**
+   - Used for feasibility calculation  
+   - Represents site-specific environmental conditions  
+
+2. **Capability Loads**
+   - Used for capability analysis  
+   - Includes multiple wind load cases with increasing wind speeds  
+   - Used to determine the **maximum wind speed or CP value** the DP system can withstand  
+
+---
+
+## 7. Analysis Settings
+
+In the **Analysis Settings** panel, the user can define:
+
+- **Skipped zones** (heading sectors of no operational interest)
+
+These zones are excluded from calculation to:
+
+- Improve computational efficiency  
+- Focus on operationally relevant headings only  
+
+---
+
+## 8. Feasibility and Capability Analysis
+
+### 8.1 Defining an Analysis Case
+
+A feasibility calculation or capability analysis is defined by combining:
+
+- One **failure mode group**
+- One **environmental load group**
+
+Each combination represents a unique DP analysis case.
+
+---
+
+### 8.2 Running Calculations
+
+- Calculations can be run **individually** or **in batch**
+- Multiple calculation attempts can be performed to improve solution robustness
+
+Possible outcomes include:
+
+- Feasible solutions found  
+- No feasible solution found  
+- Additional calculation attempts required  
+
+---
+
+### 8.3 Result Visualization
+
+Once results are available, they can be visualized as:
+
+- **DP capability plots**
+- **DP rose plots**
+
+All plots are displayed in the **right-side plotting area** of the software.
+
+---
+
+## 9. Reporting
+
+Since all calculations in this tutorial are pre-computed, the user can directly use the **reporting function**.
+
+Key features include:
+
+- User-selectable report content  
+- Automatic formatting  
+- **One-click generation** of a complete DP work report  
+
+---
+
+## 10. Rule Utilities
+
+The DP Capability Tool includes built-in **rule utilities** to support industry compliance, including:
+
+- **DNV-ST-0111**
+- **ABS Guide for Dynamic Positioning Systems**
+
+These utilities help verify calculations and interpret results according to class requirements.
