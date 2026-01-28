@@ -6,7 +6,7 @@ sidebar:
   open: true
 ---
 
-# Tutorial: DP Capability Analysis for an Offshore Wind Turbine Installation Vessel
+# DP Capability Analysis for an Offshore Wind Turbine Installation Vessel
 
 ## 1. Introduction
 
@@ -104,9 +104,10 @@ Failure modes are organized into **failure mode groups**, each representing a sp
 
 The user must:
 
-1. Create a failure mode group with a meaningful name  
-2. Define one or more failure modes within the group  
-3. Specify which thrusters are **active** or **failed** in each mode  
+1. Create a failure mode group with a meaningful name
+2. Define one or more failure modes within the group
+3. Specify which thrusters are **active** or **failed** in each mode
+4. Specify azimuth thruster thrust loss factor curves and restricted azimuth sectors
 
 ---
 
@@ -117,7 +118,18 @@ For azimuth thrusters, additional constraints can be applied:
 - **Thrust factor curve** over the full **0–360°** range  
 - **Multiple forbidden azimuth zones**, where thrust is restricted or not allowed  
 
-These settings allow realistic modeling of mechanical, structural, or operational limitations.
+These settings allow realistic modeling of mechanical, structural, or operational limitations. 
+
+DNV-ST-0111 and the ABS Guide for Dynamic Positioning Systems provide detailed guidance on how to account for thrust loss factor curves and forbidden zones.
+
+In this tutorial, the thrust loss factor for **Th1** is set to 0.9 over the full 360° azimuth range, with a forbidden zone defined between 71° and 109°.
+
+The thrust loss factor for **Th2** is identical to that of **Th1**, while its forbidden zone is defined on the opposite side, ranging from 251° to 289°.
+
+The thrust loss factor curve is presented in the right-side plot, and the forbidden zones are marked on the azimuth thrusters in the thruster position view.
+
+![Thrust loss factor curve and forbidden zones](./images/ThrustLossFactorForbiddenZones.gif)
+
 
 ---
 

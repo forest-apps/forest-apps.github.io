@@ -14,7 +14,7 @@ title: "DP Capability Tool"
 
 ---
 
-## ⭐ Key Features at a Glance
+## Key Features
 
 
 {{< cards cols="1" >}}
@@ -51,7 +51,7 @@ title: "DP Capability Tool"
 
 ---
 
-## 🧮 Analysis Functions
+## Analysis Functions
 
 ### Feasibility Calculation
 Determine whether a valid thrust allocation solution exists for a given environmental condition while minimizing total power consumption.
@@ -61,7 +61,7 @@ Assess the **maximum environmental loads** a vessel can withstand while maintain
 
 ---
 
-## ⚙️ DP System & Thruster Modeling
+## DP System & Thruster Modeling
 
 ### Comprehensive Thruster Configuration
 Model a wide range of thruster types, including:
@@ -76,7 +76,7 @@ Apply robust thrust allocation algorithms to realistically distribute thrust for
 
 ---
 
-## 🌊 Environmental Load Modeling
+## Environmental Load Modeling
 
 ### Multi-Source Environmental Loads
 Accurately model external forces acting on the vessel, including:
@@ -88,7 +88,7 @@ These loads form the basis for both feasibility and capability calculations.
 
 ---
 
-## ⚠️ Failure & Scenario Analysis
+## Failure & Scenario Analysis
 
 ### Failure Mode Definition
 Simulate DP system performance under defined failure conditions, such as:
@@ -100,7 +100,7 @@ This supports intact and failure case evaluations in accordance with DP practice
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Project-Based Workflow
 ![Project Management View](./images/Snipaste_2026-01-13_09-35-46.png)
@@ -120,7 +120,7 @@ This supports intact and failure case evaluations in accordance with DP practice
 
 ---
 
-## 📊 Visualization & Results
+## Visualization & Results
 
 ### Capability and Feasibility Plots
 Generate clear visual outputs, including **rose plots**, to illustrate vessel performance under different load directions and environmental conditions.
@@ -130,7 +130,7 @@ Inspect analysis results interactively to better understand thrust utilization, 
 
 ---
 
-## 🧰 Engineering Utilities & Rules
+## Engineering Utilities & Rules
 
 ### Built-in Rule Utilities
 Includes calculation utilities aligned with industry guidance and classification society practices, such as:
@@ -141,7 +141,7 @@ These utilities assist with consistent and standards-aware analysis.
 
 ---
 
-## 🖥 User Interface & Project Management
+## User Interface & Project Management
 
 ### Project-Based Workflow
 Organize all models, configurations, and results within a structured project system.
@@ -156,7 +156,7 @@ This design improves efficiency and usability for engineering workflows.
 
 ---
 
-## ✅ Typical Applications
+## Typical Applications
 
 - DP capability assessment for offshore vessels  
 - Operability and environmental limit evaluation  
