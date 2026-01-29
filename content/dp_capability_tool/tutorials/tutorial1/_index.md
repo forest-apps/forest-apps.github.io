@@ -6,7 +6,7 @@ sidebar:
   open: true
 ---
 
-# DP Capability Analysis for an Offshore Wind Turbine Installation Vessel
+# DP capability analysis for an offshore wind turbine installation vessel
 
 ## 1. Introduction
 
@@ -71,14 +71,14 @@ For each azimuth or tunnel thruster, the following parameters must be defined:
 
 Each thruster is positioned relative to the vessel reference coordinate system. When a thrust loss factor curve is not supplied, the default thrust loss factor is applied to calculate the thrust force. It is especially applicable to azimuth thrusters.
 
-#### Azimuth Thrusters
+#### Azimuth thrusters
 
 | Name | X (m) | Y (m) | Diameter (m) | Max power (kW) | Nominal thrust (kN) | Default thrust loss factor |
 |------|------:|------:|-------------:|--------------:|--------------------:|---------------------------:|
 | Th1  | -108.6 | -8.2 | 0 | 4,500.00 | 694.428 | 0.9 |
 | Th2  | -108.6 | 8.2  | 0 | 4,500.00 | 694.428 | 0.9 |
 
-#### Tunnel Thrusters
+#### Tunnel thrusters
 
 | Name | X (m) | Y (m) | Diameter (m) | Max power (kW) | Nominal thrust (kN) | Default thrust loss factor |
 |------|------:|------:|-------------:|--------------:|--------------------:|---------------------------:|
@@ -92,9 +92,7 @@ The thruster position plot displays each azimuth thruster, tunnel thruster, and 
 
 ---
 
-## 5. Failure Mode Definition
-
-### 5.1 Failure Mode Groups
+## 5. Failure mode definition
 
 Failure modes are organized into **failure mode groups**, each representing a specific operational scenario, such as:
 
@@ -111,7 +109,7 @@ The user must:
 
 ---
 
-### 5.2 Azimuth Thruster Restrictions
+### 5.1 Azimuth thruster restrictions
 
 For azimuth thrusters, additional constraints can be applied:
 
@@ -124,7 +122,11 @@ DNV-ST-0111 and the ABS Guide for Dynamic Positioning Systems provide detailed g
 
 In this tutorial, the thrust loss factor for **Th1** is set to 0.9 over the full 360° azimuth range, with a forbidden zone defined between 71° and 109°.
 
+![Th1 - Thrust loss factor curve and forbidden zones](./images/Snipaste_2026-01-29_10-57-11.png)
+
 The thrust loss factor for **Th2** is identical to that of **Th1**, while its forbidden zone is defined on the opposite side, ranging from 251° to 289°.
+
+![Th2 - Thrust loss factor curve and forbidden zones](./images/Snipaste_2026-01-29_10-58-37.png)
 
 The thrust loss factor curve is presented in the right-side plot, and the forbidden zones are marked on the azimuth thrusters in the thruster position view.
 
@@ -133,30 +135,28 @@ The thrust loss factor curve is presented in the right-side plot, and the forbid
 
 ---
 
-## 6. Environmental Load Definition
+## 6. Environmental load definition
 
-Environmental loads are required for both **feasibility calculations** and **capability analysis**.
+Environmental loads are defined for both feasibility calculations and capability analysis to assess the resistance capacity of the dynamic positioning system.
 
-### 6.1 Environmental Load Groups
-
-Environmental loads are organized into **groups**, each corresponding to a specific wind speed or wind speed series.
+Environmental loads are organized into groups, each representing a specific wind speed or wind speed series, which is particularly suitable for capability analysis to evaluate the maximum wind speed or DP capability number that the dynamic positioning system can withstand.
 
 In this tutorial, two environmental load groups are used:
 
-1. **Site Loads**
+1. **Site loads**
    - Used for feasibility calculation  
-   - Represents site-specific environmental conditions  
+   - Represents single site-specific environmental condition  
 
-2. **Capability Loads**
+2. **Capability loads**
    - Used for capability analysis  
    - Includes multiple wind load cases with increasing wind speeds  
-   - Used to determine the **maximum wind speed or CP value** the DP system can withstand  
+   - Used to determine the **maximum wind speed or DP capability number** the DP system can withstand  
 
 ---
 
-## 7. Analysis Settings
+## 7. Analysis settings
 
-In the **Analysis Settings** panel, the user can define:
+In the **Analysis settings** panel, the user can define:
 
 - **Skipped zones** (heading sectors of no operational interest)
 
@@ -167,7 +167,7 @@ These zones are excluded from calculation to:
 
 ---
 
-## 8. Feasibility and Capability Analysis
+## 8. Feasibility calcuation and capability Analysis
 
 ### 8.1 Defining an Analysis Case
 
