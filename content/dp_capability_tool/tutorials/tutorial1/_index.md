@@ -676,51 +676,55 @@ The external load data are provided in the following tables.
 
 ## 7. Analysis settings
 
-In the **Analysis settings** panel, the user can define:
-
-- **Skipped zones** (heading sectors of no operational interest)
-
-These zones are excluded from calculation to:
-
-- Improve computational efficiency  
-- Focus on operationally relevant headings only  
+In the **Analysis settings** panel, users can define **Skipped zones**, which represent heading sectors that are not of operational interest. These sectors are excluded from the analysis to reduce computational effort and focus the calculations on applicable headings. When skipped zones are defined, the rose plots are updated accordingly.
 
 ---
 
-## 8. Feasibility calcuation and capability Analysis
+## 8. Feasibility calcuation
 
-### 8.1 Defining an Analysis Case
+### 8.1 Defining an analysis case
 
-A feasibility calculation or capability analysis is defined by combining:
+A feasibility calculation or capability analysis is configured by selecting:
 
-- One **failure mode group**
-- One **environmental load group**
+- One **Failure mode group**
+- One **Environmental load group**
 
-Each combination of a single failure mode and a single environmental load defines a unique DP analysis case.
+Each selected pair forms a unique DP analysis case, which is evaluated independently.
+
+In this tutorial, two calculation groups are configured.
+The first calculation group combines **Failure Mode Group 1** with **Site Loads**.
+
+![Calculation group 1](./images/Snipaste_2026-02-02_14-17-49.png)
+
+
+The second calculation group combines **Failure Mode Group 1** with **Capability Loads**.
+
+![Calculation group 2](./images/Snipaste_2026-02-02_14-18-44.png)
+
 
 ---
 
 ### 8.2 Running Calculations
 
-- Calculations can be run **individually** or **in batch**
-- Multiple calculation attempts can be performed to improve solution robustness
+The DP Capability Tool allows feasibility calculations to be executed either as a single case or in batch mode.
 
-Possible outcomes include:
+For each analysis case, the DP Capability Tool formulates an optimization problem at every heading or environmental direction (calculation point). The solver determines an optimal thrust allocation using the available azimuth thrusters, tunnel thrusters, and shaft propellers.
 
-- Feasible solutions found  
-- No feasible solution found  
-- Additional calculation attempts required  
+Repeating the calculation increases the likelihood of identifying a feasible or improved solution. The tool also provides an option to rerun calculations only for previously failed calculation points, improving efficiency while enhancing overall solution robustness.
 
----
+![Calculation](./images/Snipaste_2026-02-02_15-02-15.png)
 
-### 8.3 Result Visualization
 
-Once results are available, they can be visualized as:
+In the first calculation group, a single calculation is performed to determine a feasible solution for each environmental direction. The resulting DP capability is displayed as rose plots on the right side of the interface, while detailed numerical results are available in tabular form.
 
-- **DP capability plots**
-- **DP rose plots**
+![Feasible calculation results](./images/FeasibleCalculationResults.gif)
 
-All plots are displayed in the **right-side plotting area** of the software.
+In the second calcuation group, as the wind speed increases, no feasible solution can be found for some certain direction and the rose plots of total power and maximum single thruster nominal thrust utilization become discontinuous. 
+
+In the second calculation group, as the wind speed increases, feasible solutions can no longer be found for certain directions. As a result, the rose plots of total power and maximum single-thruster nominal thrust utilization become discontinuous.
+
+![No solution rose plot](./images/Snipaste_2026-02-02_14-27-11.png)
+
 
 ---
 
