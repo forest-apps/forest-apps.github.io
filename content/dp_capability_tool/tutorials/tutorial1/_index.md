@@ -692,12 +692,12 @@ A feasibility calculation or capability analysis is configured by selecting:
 Each selected pair forms a unique DP analysis case, which is evaluated independently.
 
 In this tutorial, two calculation groups are configured.
-The first calculation group combines **Failure Mode Group 1** with **Site Loads**.
+The first calculation group combines **Failure mode group 1** with **Site loads**.
 
 ![Calculation group 1](./images/Snipaste_2026-02-02_14-17-49.png)
 
 
-The second calculation group combines **Failure Mode Group 1** with **Capability Loads**.
+The second calculation group combines **Failure mode group 1** with **Capability loads**.
 
 ![Calculation group 2](./images/Snipaste_2026-02-02_14-18-44.png)
 
@@ -715,7 +715,7 @@ Repeating the calculation increases the likelihood of identifying a feasible or 
 ![Calculation](./images/Snipaste_2026-02-02_15-02-15.png)
 
 
-In the first calculation group, a single calculation is performed to determine a feasible solution for each environmental direction. The resulting DP capability is displayed as rose plots on the right side of the interface, while detailed numerical results are available in tabular form.
+In the first calculation group, a single calculation is performed to determine a feasible solution for each environmental direction. The resulting feasibility calculation is displayed as rose plots on the right side of the interface, while detailed numerical results are available in tabular form.
 
 ![Feasible calculation results](./images/FeasibleCalculationResults.gif)
 
@@ -727,6 +727,31 @@ In the second calculation group, as the wind speed increases, feasible solutions
 
 
 ---
+
+## 9. Capability analysis
+
+A **feasibility calculation** evaluates whether a dynamic positioning (DP) system can maintain position under a **given, fixed environmental condition** for specified headings and failure modes. In contrast, a **capability analysis** assesses the **maximum environmental severity** (typically increasing wind speed) that the DP system can withstand before no feasible solution exists. Feasibility calculations are commonly used for **site-specific operational assessments**, while capability analyses are mainly applied for **DP performance evaluation and verification**.
+
+| Aspect | Feasibility calculation | Capability analysis |
+|------|------------------------|---------------------|
+| Environmental loads | Single fixed condition | Multiple increasing conditions |
+| Key question | Can the DP system hold position? | How much environment can it withstand? |
+| Typical output | Feasible / not feasible | Maximum wind speed or DP capability number |
+| Typical application | Operational planning, site assessment | Design evaluation, DP performance assessment |
+
+
+In this tutorial, one calculation group is configured by combining **Failure mode group 1** with **Capability loads**.
+
+![Calculation group](./images/Snipaste_2026-02-04_11-26-36.png)
+
+
+The results of the capability analysis are presented on the right side of the interface as rose plots showing the maximum wind speed and DP capability number, with detailed numerical results provided in tabular form.
+
+![Calculation group](./images/CapabilityAnalysisResults.gif)
+
+
+---
+
 
 ## 9. Reporting
 
