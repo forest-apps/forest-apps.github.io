@@ -37,6 +37,16 @@ layout: hextra-home
     imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
+  
+  {{< hextra/feature-card
+    title="DP Rule Utilities"
+    subtitle="Provide rule-based calculations in accordance with **DNV-ST-0111**, including **environmental loads** from wind, current, and waves, as well as key thrust loss effects to generate **thrust loss factors** and **forbidden zones**. The tool also computes **rudder performance curves**, delivering longitudinal and transverse force ratios for accurate DP performance assessment." 
+    link="/dp_rule_utilities"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="./images/Snipaste_2026-02-04_17-04-45.png"
+    imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
 
   {{< hextra/feature-card
     title="Wave Scatter Diagram Tool"
