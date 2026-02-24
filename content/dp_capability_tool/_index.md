@@ -14,8 +14,7 @@ title: "DP Capability Tool"
 
 ---
 
-## Key Features
-
+## 1 Key Features
 
 {{< cards cols="1" >}}
   {{< card
@@ -51,19 +50,19 @@ title: "DP Capability Tool"
 
 ---
 
-## Analysis Functions
+## 2 Analysis Functions
 
-### Feasibility Calculation
+### 2.1 Feasibility Calculation
 Determine whether a valid thrust allocation solution exists for a given environmental condition while minimizing total power consumption.
 
-### DP Capability Analysis
+### 2.2 DP Capability Analysis
 Assess the **maximum environmental loads** a vessel can withstand while maintaining station-keeping, supporting DP capability plots and operability assessments.
 
 ---
 
-## DP System & Thruster Modeling
+## 3 DP System & Thruster Modeling
 
-### Comprehensive Thruster Configuration
+### 3.1 Comprehensive Thruster Configuration
 Model a wide range of thruster types, including:
 - Azimuth thrusters  
 - Tunnel thrusters  
@@ -71,14 +70,13 @@ Model a wide range of thruster types, including:
 
 Each thruster can be configured with position, orientation, power limits, and operational constraints.
 
-### Robust Thrust Allocation
+### 3.2 Robust Thrust Allocation
 Apply robust thrust allocation algorithms to realistically distribute thrust forces and moments while respecting physical and operational limitations.
 
 ---
 
-## Environmental Load Modeling
+## 4 Environmental Load Modeling
 
-### Multi-Source Environmental Loads
 Accurately model external forces acting on the vessel, including:
 - Wind loads  
 - Wave loads  
@@ -88,9 +86,8 @@ These loads form the basis for both feasibility and capability calculations.
 
 ---
 
-## Failure & Scenario Analysis
+## 5 Failure & Scenario Analysis
 
-### Failure Mode Definition
 Simulate DP system performance under defined failure conditions, such as:
 - Thruster failures  
 - Power loss scenarios  
@@ -100,39 +97,38 @@ This supports intact and failure case evaluations in accordance with DP practice
 
 ---
 
-## Screenshots
+## 6 Screenshots
 
-### Project-Based Workflow
+### 6.1 Project-Based Workflow
 ![Project Management View](./images/Snipaste_2026-01-13_09-35-46.png)
 *Organize vessels, environments, DP systems, and analysis cases in a structured project tree.*
 
-### Thruster & DP System Configuration
+### 6.2 Thruster & DP System Configuration
 ![Thruster Configuration](./images/Snipaste_2026-01-13_09-37-26.png)
 *Define thruster positions, orientations, and operational limits through a dedicated configuration interface.*
 
-### Capability & Feasibility Plots
+### 6.3 Capability & Feasibility Plots
 ![DP Capability Plot](./images/Snipaste_2026-01-13_09-38-26.png)
 *Rose plots visualize vessel capability under different environmental load directions.*
 
-### Reporting Output
+### 6.4 Reporting Output
 ![Report Preview](./images/Snipaste_2026-01-13_09-39-46.png)
 *Generate comprehensive, ready-to-use engineering reports containing figures and tables.*
 
 ---
 
-## Visualization & Results
+## 7 Visualization & Results
 
-### Capability and Feasibility Plots
+### 7.1 Capability and Feasibility Plots
 Generate clear visual outputs, including **rose plots**, to illustrate vessel performance under different load directions and environmental conditions.
 
-### Interactive Plot Views
+### 7.2 Interactive Plot Views
 Inspect analysis results interactively to better understand thrust utilization, margins, and directional limitations.
 
 ---
 
-## Engineering Utilities & Rules
+## 8 Engineering Utilities & Rules
 
-### Built-in Rule Utilities
 Includes calculation utilities aligned with industry guidance and classification society practices, such as:
 - DNV DNV-ST-0111 Assessment of station keeping capability of dynamic positioning vessels
 - ABS Guide for Dynamic Positioning Systems  
@@ -141,12 +137,10 @@ These utilities assist with consistent and standards-aware analysis.
 
 ---
 
-## User Interface & Project Management
+## 9 User Interface & Project Management
 
-### Project-Based Workflow
 Organize all models, configurations, and results within a structured project system.
 
-### Interactive Graphical User Interface
 The software provides:
 - Application menu and toolbars  
 - Project panel for model management  
@@ -156,7 +150,7 @@ This design improves efficiency and usability for engineering workflows.
 
 ---
 
-## Typical Applications
+## 10 Typical Applications
 
 - DP capability assessment for offshore vessels  
 - Operability and environmental limit evaluation  

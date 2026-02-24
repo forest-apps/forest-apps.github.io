@@ -8,7 +8,7 @@ sidebar:
 
 # DP capability analysis for an offshore wind turbine installation vessel
 
-## 1. Introduction
+## 1 Introduction
 
 This tutorial demonstrates how to use the **DP Capability Tool** to perform **feasibility calculation** and **capability analyses** for an offshore wind turbine installation vessel equipped with:
 
@@ -21,7 +21,7 @@ The complete tutorial model is provided within the software and is accessible fr
 
 ---
 
-## 2. Vessel data (Optional)
+## 2 Vessel data (Optional)
 
 In a standard DP capability analysis, the first step is to input **vessel data**, which defines the vessel reference frame and serves as a container for thruster positions.
 
@@ -43,7 +43,7 @@ These outline points are linked together into a closed frame, helping users visu
 
 ---
 
-## 3. Thruster configuration
+## 3 Thruster configuration
 
 This vessel configuration includes:
 
@@ -71,14 +71,14 @@ For each azimuth or tunnel thruster, the following parameters must be defined:
 
 Each thruster is positioned relative to the vessel reference coordinate system. When a thrust loss factor curve is not supplied, the default thrust loss factor is applied to calculate the thrust force. It is especially applicable to azimuth thrusters.
 
-#### Azimuth thrusters
+### 3.2 Azimuth thrusters
 
 | Name | X (m) | Y (m) | Diameter (m) | Max power (kW) | Nominal thrust (kN) | Default thrust loss factor |
 |------|------:|------:|-------------:|--------------:|--------------------:|---------------------------:|
 | Th1  | -108.6 | -8.2 | 0 | 4,500.00 | 694.428 | 0.9 |
 | Th2  | -108.6 | 8.2  | 0 | 4,500.00 | 694.428 | 0.9 |
 
-#### Tunnel thrusters
+### 3.3 Tunnel thrusters
 
 | Name | X (m) | Y (m) | Diameter (m) | Max power (kW) | Nominal thrust (kN) | Default thrust loss factor |
 |------|------:|------:|-------------:|--------------:|--------------------:|---------------------------:|
@@ -92,7 +92,7 @@ The thruster position plot displays each azimuth thruster, tunnel thruster, and 
 
 ---
 
-## 5. Failure mode definition
+## 4 Failure mode definition
 
 Failure modes are organized into **failure mode groups**, each representing a specific operational scenario, such as:
 
@@ -109,7 +109,7 @@ The user must:
 
 ---
 
-### 5.1 Azimuth thruster restrictions
+### 4.1 Azimuth thruster restrictions
 
 For azimuth thrusters, additional constraints can be applied:
 
@@ -135,7 +135,7 @@ The thrust loss factor curve is presented in the right-side plot, and the forbid
 
 ---
 
-## 6. Environmental load definition
+## 5 Environmental load definition
 
 Environmental loads are defined for both feasibility calculations and capability analysis to assess the resistance capacity of the dynamic positioning system.
 
@@ -149,7 +149,7 @@ Environmental loads can be entered in tabular form, with the first column repres
 
 In this tutorial, two environmental load groups are used:
 
-### 6.1 Site loads
+### 5.1 Site loads
 
 The **Site loads** group contains only one environmental load table, which is used for feasibility calculation and corresponds to a single site-specific environmental condition.
 
@@ -195,7 +195,7 @@ The external load data are provided in the following table.
 | 350.00 | -131.623 | -156.659 | -8471.013 |
 
 
-### 6.2  Capability loads
+### 5.2  Capability loads
 
 The **Capability loads** group consists of 11 environmental load tables corresponding to different Beaufort scale levels, each associated with a specific wind speed and DP capability number. The wind speed, significant wave height, peak wave period, and current speed for each Beaufort level are taken from DNV-ST-0111 to evaluate wind-, wave-, and current-induced loads.
 
@@ -209,7 +209,7 @@ When you select an environmental load table, the wind rose and component load cu
 The external load data are provided in the following tables.
 
 
-#### 6.2.1  DP capability number 1
+#### 5.2.1  DP capability number 1
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|-----------:|-----------:|-----------:|
@@ -251,7 +251,7 @@ The external load data are provided in the following tables.
 | 350.00 | -4.877 | -11.102 | -690.490 |
 
 
-#### 6.2.2  DP capability number 2
+#### 5.2.2  DP capability number 2
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|-------:|--------:|---------:|
@@ -293,7 +293,7 @@ The external load data are provided in the following tables.
 | 350.00 | -25.320 | -48.273 | -2903.122 |
 
 
-#### 6.2.3  DP capability number 3
+#### 5.2.3  DP capability number 3
 
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
@@ -336,7 +336,7 @@ The external load data are provided in the following tables.
 | 350.00 | -66.928  | -115.800| -6729.700 |
 
 
-#### 6.2.4  DP capability number 4
+#### 5.2.4  DP capability number 4
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|----------:|
@@ -378,7 +378,7 @@ The external load data are provided in the following tables.
 | 350.00 | -131.623 | -156.659 | -8471.013 |
 
 
-#### 6.2.5  DP capability number  5
+#### 5.2.5  DP capability number  5
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|----------:|
@@ -420,7 +420,7 @@ The external load data are provided in the following tables.
 | 350.00 | -255.760 | -240.402  | -11393.297 |
 
 
-#### 6.2.6  DP capability number 6
+#### 5.2.6  DP capability number 6
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|-----------:|
@@ -462,7 +462,7 @@ The external load data are provided in the following tables.
 | 350.00 | -453.921 | -385.173  | -15878.418 |
 
 
-#### 6.2.7  DP capability number 7
+#### 5.2.7  DP capability number 7
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|----------:|
@@ -504,7 +504,7 @@ The external load data are provided in the following tables.
 | 350.00 | -727.077 | -594.236 | -22090.086 |
 
 
-#### 6.2.8  DP capability number 8
+#### 5.2.8  DP capability number 8
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|----------:|----------:|-----------:|
@@ -545,7 +545,7 @@ The external load data are provided in the following tables.
 | 340.00 | -1051.614 | -1776.071| -54908.885|
 | 350.00 | -1098.545 | -901.735 | -31128.605|
 
-#### 6.2.9  DP capability number 9
+#### 5.2.9  DP capability number 9
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|-----------:|
@@ -587,7 +587,7 @@ The external load data are provided in the following tables.
 | 350.00 | -1604.671 | -1323.829 | -42947.809 |
 
 
-#### 6.2.10  DP capability number 10
+#### 5.2.10  DP capability number 10
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|-----------:|
@@ -629,7 +629,7 @@ The external load data are provided in the following tables.
 | 350.00 | -2185.605 | -1821.944 | -59230.178  |
 
 
-#### 6.2.11  DP capability number 11
+#### 5.2.11  DP capability number 11
 
 | Direction (deg) | Fx (kN) | Fy (kN) | Mz (kN-m) |
 |----------------:|---------:|---------:|----------:|
@@ -674,15 +674,17 @@ The external load data are provided in the following tables.
 
 ---
 
-## 7. Analysis settings
+## 6 Analysis settings
 
 In the **Analysis settings** panel, users can define **Skipped zones**, which represent heading sectors that are not of operational interest. These sectors are excluded from the analysis to reduce computational effort and focus the calculations on applicable headings. When skipped zones are defined, the rose plots are updated accordingly.
 
 ---
 
-## 8. Feasibility calcuation
+## 7 Feasibility calcuation
 
-### 8.1 Defining an analysis case
+A **feasibility calculation** evaluates whether a dynamic positioning (DP) system can maintain position under a **given, fixed environmental condition** for specified headings and failure modes. 
+
+### 7.1 Defining an analysis case
 
 A feasibility calculation or capability analysis is configured by selecting:
 
@@ -704,7 +706,7 @@ The second calculation group combines **Failure mode group 1** with **Capability
 
 ---
 
-### 8.2 Running Calculations
+### 7.2 Running Calculations
 
 The DP Capability Tool allows feasibility calculations to be executed either as a single case or in batch mode.
 
@@ -728,9 +730,9 @@ In the second calculation group, as the wind speed increases, feasible solutions
 
 ---
 
-## 9. Capability analysis
+## 8 Capability analysis
 
-A **feasibility calculation** evaluates whether a dynamic positioning (DP) system can maintain position under a **given, fixed environmental condition** for specified headings and failure modes. In contrast, a **capability analysis** assesses the **maximum environmental severity** (typically increasing wind speed) that the DP system can withstand before no feasible solution exists. Feasibility calculations are commonly used for **site-specific operational assessments**, while capability analyses are mainly applied for **DP performance evaluation and verification**.
+A **capability analysis** assesses the **maximum environmental severity** (typically increasing wind speed) that the DP system can withstand before no feasible solution exists. Feasibility calculations are commonly used for **site-specific operational assessments**, while capability analyses are mainly applied for **DP performance evaluation and verification**.
 
 | Aspect | Feasibility calculation | Capability analysis |
 |------|------------------------|---------------------|
@@ -753,7 +755,7 @@ The results of the capability analysis are presented on the right side of the in
 ---
 
 
-## 9. Reporting
+## 9 Reporting
 
 Since all calculations in this tutorial are pre-computed, the user can directly use the **reporting function**.
 
@@ -763,13 +765,9 @@ Key features include:
 - Automatic formatting  
 - **One-click generation** of a complete DP work report  
 
----
 
-## 10. Rule Utilities
+![Reporting](./images/Snipaste_2026-02-24_09-31-10.png)
 
-The DP Capability Tool includes built-in **rule utilities** to support industry compliance, including:
+A Word report can be automatically generated, containing all input data, calculation tables, and result figures for documentation and review purposes.
 
-- **DNV-ST-0111**
-- **ABS Guide for Dynamic Positioning Systems**
-
-These utilities help verify calculations and interpret results according to class requirements.
+![Reporting](./images/Reporting.gif)
