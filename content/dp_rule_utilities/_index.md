@@ -1,12 +1,16 @@
 ---
 linkTitle: "DP Rule Utilites"
 title: "DP Rule Utilites"
+
+author:
+  name: "Forest Apps"
+  email: "ForestApps@hotmail.com"
 ---
 
 <div class="hx-mt-6"></div>
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="Download" link="https://github.com/forest-apps/forest-apps.github.io/releases/tag/DpCapabilityTool_Windows_v1.1.1.0" >}}
+{{< hextra/hero-button text="Download" link="https://github.com/forest-apps/forest-apps.github.io/releases/download/DpCapabilityTool_Windows_v1.1.1.0/DpCapabilityTool_Windows_v1.1.1.0.zip" >}}
 </div>
 
 <div class="hx-mt-6"></div>

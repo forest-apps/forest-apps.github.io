@@ -59,6 +59,16 @@ layout: hextra-home
   >}}
   
   {{< hextra/feature-card
+    title="Quasi-Static Mooring Analysis Tool"
+    subtitle="QsMoor is a software tool developed for the analysis of mooring systems for floating offshore structures. It calculates the position and tension distribution along each mooring line using standard catenary equations. The program automatically determines the equilibrium state of the moored system and efficiently evaluates the corresponding system stiffness matrices using semi-analytic Jacobian methods." 
+    link="/qs_moor"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="./images/Snipaste_2026-03-10_13-46-13.png"
+    imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
+  
+  {{< hextra/feature-card
     title="HydroModeller"
     subtitle="Cloud-based panel model and Morison model modelling tool for hydrodynamic analysis of typical floaters."
     link="/hydro_modeller"
